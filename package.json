@@ -1,14 +1,14 @@
 {
-  "name": "multihashing-async",
-  "version": "0.6.0",
+  "name": "@arve.knudsen/multihashing-async",
+  "version": "0.6.1",
   "description": "multiple hash functions",
   "keywords": [
     "multihash"
   ],
-  "homepage": "https://github.com/multiformats/js-multihashing-async",
-  "bugs": "https://github.com/multiformats/js-multihashing-async/issues",
+  "homepage": "https://github.com/libp2p/js-multihashing-async",
+  "bugs": "https://github.com/libp2p/js-multihashing-async/issues",
   "license": "MIT",
-  "leadMaintainer": "Hugo Dias <mail@hugodias.me>",
+  "leadMaintainer": "Arve Knudsen <arve.knudsen@gmail.com>",
   "files": [
     "src",
     "dist"
@@ -17,7 +17,7 @@
   "browser": {
     "./src/crypto-sha1-2.js": "./src/crypto-sha1-2-browser.js"
   },
-  "repository": "github:multiformats/js-multihashing-async",
+  "repository": "github:libp2p/js-multihashing-async",
   "scripts": {
     "test": "aegir test",
     "test:browser": "aegir test -t browser",
@@ -33,7 +33,7 @@
   "dependencies": {
     "blakejs": "^1.1.0",
     "js-sha3": "~0.8.0",
-    "multihashes": "~0.4.13",
+    "@arve.knudsen/multihashes": "~0.4.15",
     "murmurhash3js": "^3.0.1",
     "nodeify": "^1.0.1"
   },
