@@ -76,4 +76,8 @@ module.exports = [[
   'beep boop',
   'dbl-sha2-256',
   '56209cd9115d76945c2455b1450295b05f4edeba2e7286bc24c23e266b48faf578c0'
+], [
+  'beep boop',
+  'identity',
+  '00096265657020626f6f70'
 ]]
