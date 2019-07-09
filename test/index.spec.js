@@ -83,7 +83,7 @@ describe('error handling', () => {
       it('throws an error when the hashing algorithm is not supported', async () => {
         const buf = Buffer.from('beep boop')
 
-        const stub = sinon.stub(require('multihashes'), 'coerceCode').returns('snake-oil')
+        const stub = sinon.stub(require('@arve.knudsen/multihashes'), 'coerceCode').returns('snake-oil')
         try {
           await fn(buf, 'snake-oil')
         } catch (err) {

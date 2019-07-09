@@ -2,7 +2,7 @@
 
 const { Buffer } = require('buffer')
 const errcode = require('err-code')
-const multihash = require('multihashes')
+const multihash = require('@arve.knudsen/multihashes')
 const crypto = require('./crypto')
 
 /**
