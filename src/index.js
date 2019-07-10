@@ -1,6 +1,6 @@
 'use strict'
 
-const multihash = require('@arve.knudsen/multihashes')
+const multihash = require('multihashes')
 const crypto = require('./crypto')
 
 module.exports = Multihashing
@@ -103,6 +103,8 @@ Multihashing.createHash = function (func) {
  * @type {Object}
  */
 Multihashing.functions = {
+  // identity
+  0x0: (buf, cb) => {cb(null, buf)},
   // sha1
   0x11: crypto.sha1,
   // sha2-256
